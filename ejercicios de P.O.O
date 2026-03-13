@@ -1,0 +1,76 @@
+﻿namespace ejercicios_de_P.O.O
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+            empleado e1 = new empleado();
+            empleado e2 = new empleado();
+            empleado e3 = new empleado();
+            Console.WriteLine(" ingrese su nombre completo");
+            e1.nombreCompl = (Console.ReadLine());
+            Console.WriteLine(" ingrese su direccion");
+            e1.direccion = (Console.ReadLine());
+            Console.WriteLine(" ingrese su numero telefonico");
+            e1.telefono = (Console.ReadLine());
+            Console.WriteLine(" ingrese su cargo");
+            e1.cargo = (Console.ReadLine());
+            Console.WriteLine(" ingrese su departamento");
+            e1.departamento = (Console.ReadLine());
+            Console.WriteLine(" ingrese su sueldo");
+            e1.sueldo = double.Parse(Console.ReadLine());
+
+            e1.Mostrardatos();
+
+            Console.WriteLine(" ingrese su nombre completo");
+            e2.nombreCompl = (Console.ReadLine());
+            Console.WriteLine(" ingrese su direccion");
+            e2.direccion = (Console.ReadLine());
+            Console.WriteLine(" ingrese su numero telefonico");
+            e2.telefono = (Console.ReadLine());
+            Console.WriteLine(" ingrese su cargo");
+            e2.cargo = (Console.ReadLine());
+            Console.WriteLine(" ingrese su departamento");
+            e2.departamento = (Console.ReadLine());
+            Console.WriteLine(" ingrese su sueldo");
+            e2.sueldo = double.Parse(Console.ReadLine());
+
+            e2.Mostrardatos();
+
+            Console.WriteLine(" ingrese su nombre completo");
+            e3.nombreCompl = (Console.ReadLine());
+            Console.WriteLine(" ingrese su direccion");
+            e3.direccion = (Console.ReadLine());
+            Console.WriteLine(" ingrese su numero telefonico");
+            e3.telefono = (Console.ReadLine());
+            Console.WriteLine(" ingrese su cargo");
+            e3.cargo = (Console.ReadLine());
+            Console.WriteLine(" ingrese su departamento");
+            e3.departamento = (Console.ReadLine());
+            Console.WriteLine(" ingrese su sueldo");
+            e3.sueldo = double.Parse(Console.ReadLine());
+
+            e3.Mostrardatos();
+        }
+        class empleado
+        {
+            public string nombreCompl;
+            public string direccion;
+            public string telefono;
+            public string cargo;
+            public string departamento;
+            public double sueldo;
+
+            public void Mostrardatos()
+            {
+                Console.WriteLine($" su nombre es {nombreCompl}");
+                Console.WriteLine($"su direccion es {direccion} ");
+                Console.WriteLine($"su numero de telefono es {telefono}");
+                Console.WriteLine($"su cargo ess {cargo} su departamento de {departamento}");
+                Console.WriteLine($"su sueldo es de {sueldo}");
+            }
+
+        }
+    }
+}
